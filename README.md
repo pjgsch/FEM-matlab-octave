@@ -1,3 +1,3 @@
-# FEM truss
-M-files and examples for FEM with Matlab and/or Octave
+# fem-truss
 
+FEA (Matlab/octave) for truss structures.
