@@ -1,0 +1,25 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Assuming we are in the 'root' of 'truss', where you see the directories
+% 'truss*' and the template files 'runtruss2dL.mm', 'runtruss2dN.mm'
+% and 'runtruss3dL.mm'.
+
+% Goto a place where you can run the models, e.g. directory './run'.
+% (Make it if it does not exist.)
+% Start Matlab (or Octave)
+
+cd 'run'
+
+% Adapt path to find program and input files.
+
+path('../truss2dL',path);
+path('../truss2dN',path);
+path('../truss3dN',path);
+path('../truss3dI',path);
+
+% Make subdirectory 'mat' where you run the models.
+
+if ~exist('mat/'), mkdir('mat/'); end;
+
+% When you are finished you might want to remove './run'.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
